@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Storage } from '../storage/storage'
-import { Box } from './boardBox'
-import * as utils from '../utils/functions'
+import Box from './boardBox'
+import * as utils from '../utility/functions'
 
 export class Board extends React.Component {
     constructor(props) {
@@ -69,14 +69,14 @@ export class Board extends React.Component {
         return (
             <div>
                 {/* Link to scoreboard */}
-                <Link to="/" className="board-link">Go back to scoreboard</Link>
+                <Link to="/" className="boardLink">Go back to scoreboard</Link>
 
                 {/* The game board */}
-                <div className="board-wrapper">
+                <div className="boardWrapper">
                     <div className="board">
-                        <h2 className="board-heading">{status}</h2>
+                        <h2 className="boardHeading">{status}</h2>
 
-                        <div className="board-row">
+                        <div className="boardRow">
                             <Box value={this.state.boxes[0]} onClick={() => this.handleBoxClick(0)} />
 
                             <Box value={this.state.boxes[1]} onClick={() => this.handleBoxClick(1)} />
@@ -84,7 +84,7 @@ export class Board extends React.Component {
                             <Box value={this.state.boxes[2]} onClick={() => this.handleBoxClick(2)} />
                         </div>
 
-                        <div className="board-row">
+                        <div className="boardRow">
                             <Box value={this.state.boxes[3]} onClick={() => this.handleBoxClick(3)} />
 
                             <Box value={this.state.boxes[4]} onClick={() => this.handleBoxClick(4)} />
@@ -92,7 +92,7 @@ export class Board extends React.Component {
                             <Box value={this.state.boxes[5]} onClick={() => this.handleBoxClick(5)} />
                         </div>
 
-                        <div className="board-row">
+                        <div className="boardRow">
                             <Box value={this.state.boxes[6]} onClick={() => this.handleBoxClick(6)} />
 
                             <Box value={this.state.boxes[7]} onClick={() => this.handleBoxClick(7)} />
@@ -101,10 +101,10 @@ export class Board extends React.Component {
                         </div>
                     </div>
 
-                    <div className="board-history">
-                        <h2 className="board-heading">Moves history:</h2>
+                    <div className="boardHistory">
+                        <h2 className="boardHeading">Moves history:</h2>
 
-                        <ul className="board-historyList">
+                        <ul className="boardHistoryList">
                             {this.state.history.length === 0 && <span>No moves to show.</span>}
 
                             {this.state.history.length !== 0 && this.state.history.map((move, index) => {
@@ -113,7 +113,7 @@ export class Board extends React.Component {
                         </ul>
                     </div>
 
-                    {winner && <div className="board-footer">
+                    {winner && <div className="boardFooter">
                         <button className="btn" onClick={this.handleBoardRestart}>Start new game</button>
                     </div>}
                 </div>

@@ -1,0 +1,33 @@
+.boardWrapper {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.board {
+    width: 250px;
+}
+
+.boardRow {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.boardHeading {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font: 700 18px / 1.618 sans-serif;
+    list-style-type: none;
+}
+
+.boardHistory {
+    margin-left: 18px;
+}
+
+.boardHistoryList {
+    padding: 0;
+    list-style-type: none;
+}
+
+.boardFooter {
+    width: 100%;
+}
