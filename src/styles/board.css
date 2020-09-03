@@ -31,3 +31,15 @@
 .boardFooter {
     width: 100%;
 }
+
+.boardLink {
+    margin: 200px !important;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.boardLink::before {
+    content: '🛬';
+    font-size: 1rem;
+    text-decoration: none;
+}

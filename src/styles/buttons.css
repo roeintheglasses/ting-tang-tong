@@ -3,7 +3,7 @@
     margin-top: 18px;
     font-size: 14px;
     color: #fff;
-    background-color: #3498db;
+    background-color: #6B4D9E;
     border: 0;
     border-radius: 4px;
     cursor: pointer;
@@ -11,5 +11,5 @@
 }
 
 .btn:hover {
-    background-color: #2980b9;
+    background-color: #4186b4;
 }

@@ -67,55 +67,72 @@ export class Board extends React.Component {
         }
 
         return (
-            <div>
-                {/* Link to scoreboard */}
-                <Link to="/" className="boardLink">Go back to scoreboard</Link>
-
-                {/* The game board */}
-                <div className="boardWrapper">
-                    <div className="board">
-                        <h2 className="boardHeading">{status}</h2>
-
-                        <div className="boardRow">
-                            <Box value={this.state.boxes[0]} onClick={() => this.handleBoxClick(0)} />
-
-                            <Box value={this.state.boxes[1]} onClick={() => this.handleBoxClick(1)} />
-
-                            <Box value={this.state.boxes[2]} onClick={() => this.handleBoxClick(2)} />
-                        </div>
-
-                        <div className="boardRow">
-                            <Box value={this.state.boxes[3]} onClick={() => this.handleBoxClick(3)} />
-
-                            <Box value={this.state.boxes[4]} onClick={() => this.handleBoxClick(4)} />
-
-                            <Box value={this.state.boxes[5]} onClick={() => this.handleBoxClick(5)} />
-                        </div>
-
-                        <div className="boardRow">
-                            <Box value={this.state.boxes[6]} onClick={() => this.handleBoxClick(6)} />
-
-                            <Box value={this.state.boxes[7]} onClick={() => this.handleBoxClick(7)} />
-
-                            <Box value={this.state.boxes[8]} onClick={() => this.handleBoxClick(8)} />
+            <div className="main">
+                <section class="hero is-black is-bold is-medium">
+                    <div class="hero-body">
+                        <div class="container has-text-centered">
+                            <h1 class="title">
+                                Ting-Tang-Tong
+                            </h1>
+                            <h2 class="subtitle">
+                                Because tic-tac-toe sounds too basic.
+                            </h2>
                         </div>
                     </div>
+                </section>
+                <div className="container">
+                    <section className="container has-text-centered">
+                        {/* Link to scoreboard */}
+                        <Link to="/" className="boardLink">Go back to scoreboard</Link>
+                    </section>
 
-                    <div className="boardHistory">
-                        <h2 className="boardHeading">Moves history:</h2>
 
-                        <ul className="boardHistoryList">
-                            {this.state.history.length === 0 && <span>No moves to show.</span>}
+                    {/* The game board */}
+                    <div className="boardWrapper">
+                        <div className="board">
+                            <h2 className="boardHeading">{status}</h2>
 
-                            {this.state.history.length !== 0 && this.state.history.map((move, index) => {
-                                return <li key={index}>Move {index + 1}: <strong>{move}</strong></li>
-                            })}
-                        </ul>
+                            <div className="boardRow">
+                                <Box value={this.state.boxes[0]} onClick={() => this.handleBoxClick(0)} />
+
+                                <Box value={this.state.boxes[1]} onClick={() => this.handleBoxClick(1)} />
+
+                                <Box value={this.state.boxes[2]} onClick={() => this.handleBoxClick(2)} />
+                            </div>
+
+                            <div className="boardRow">
+                                <Box value={this.state.boxes[3]} onClick={() => this.handleBoxClick(3)} />
+
+                                <Box value={this.state.boxes[4]} onClick={() => this.handleBoxClick(4)} />
+
+                                <Box value={this.state.boxes[5]} onClick={() => this.handleBoxClick(5)} />
+                            </div>
+
+                            <div className="boardRow">
+                                <Box value={this.state.boxes[6]} onClick={() => this.handleBoxClick(6)} />
+
+                                <Box value={this.state.boxes[7]} onClick={() => this.handleBoxClick(7)} />
+
+                                <Box value={this.state.boxes[8]} onClick={() => this.handleBoxClick(8)} />
+                            </div>
+                        </div>
+
+                        <div className="boardHistory">
+                            <h2 className="boardHeading">Moves history:</h2>
+
+                            <ul className="boardHistoryList">
+                                {this.state.history.length === 0 && <span>No moves to show.</span>}
+
+                                {this.state.history.length !== 0 && this.state.history.map((move, index) => {
+                                    return <li key={index}>Move {index + 1}: <strong>{move}</strong></li>
+                                })}
+                            </ul>
+                        </div>
+
+                        {winner && <div className="boardFooter">
+                            <button className="btn" onClick={this.handleBoardRestart}>Start new game</button>
+                        </div>}
                     </div>
-
-                    {winner && <div className="boardFooter">
-                        <button className="btn" onClick={this.handleBoardRestart}>Start new game</button>
-                    </div>}
                 </div>
             </div>
         )
