@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ting-tang-tong/static/css/main.6b083b31.chunk.css",
+    "main.js": "/ting-tang-tong/static/js/main.9b5f9d88.chunk.js",
+    "main.js.map": "/ting-tang-tong/static/js/main.9b5f9d88.chunk.js.map",
+    "runtime-main.js": "/ting-tang-tong/static/js/runtime-main.8accd351.js",
+    "runtime-main.js.map": "/ting-tang-tong/static/js/runtime-main.8accd351.js.map",
+    "static/js/2.183c5b64.chunk.js": "/ting-tang-tong/static/js/2.183c5b64.chunk.js",
+    "static/js/2.183c5b64.chunk.js.map": "/ting-tang-tong/static/js/2.183c5b64.chunk.js.map",
+    "index.html": "/ting-tang-tong/index.html",
+    "precache-manifest.4158df774ee84b254b176c2af1ed9041.js": "/ting-tang-tong/precache-manifest.4158df774ee84b254b176c2af1ed9041.js",
+    "service-worker.js": "/ting-tang-tong/service-worker.js",
+    "static/css/main.6b083b31.chunk.css.map": "/ting-tang-tong/static/css/main.6b083b31.chunk.css.map",
+    "static/js/2.183c5b64.chunk.js.LICENSE.txt": "/ting-tang-tong/static/js/2.183c5b64.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8accd351.js",
+    "static/js/2.183c5b64.chunk.js",
+    "static/css/main.6b083b31.chunk.css",
+    "static/js/main.9b5f9d88.chunk.js"
+  ]
+}
