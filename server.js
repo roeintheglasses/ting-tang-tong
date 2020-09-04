@@ -3,11 +3,12 @@ const path = require('path');
 const app = express();
 
 const port = process.env.PORT || 3000;
-
+const indexPath = path.join(__dirname, "/build");
+const indexHtml = path.join(__dirname, "/build/index.html");
 // Express Setup
-app.use(express.static(path.join(__dirname, 'build')));
+app.use(express.static(indexPath));
 app.get('/*', function (req, res) {
-    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+    res.sendFile(indexHtml);
 });
 
 //Server start
