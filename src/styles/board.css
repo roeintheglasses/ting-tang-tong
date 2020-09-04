@@ -32,14 +32,22 @@
 }
 
 .boardLink {
-    margin: 200px !important;
+    display: flex;
+    width: 200px;
+    background-color: rgb(120, 165, 248);
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
     font-size: 1rem;
     text-decoration: none;
 }
 
 .boardLink::before {
-    content: '🛬';
-    font-size: 1rem;
+    content: '🔙';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
     color: white;
     text-decoration: none;
 }

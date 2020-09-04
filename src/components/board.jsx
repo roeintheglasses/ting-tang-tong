@@ -114,6 +114,8 @@ export class Board extends React.Component {
                                 <button className="btn" onClick={this.handleBoardRestart}>Start new game</button>
                             </div>}
                             <div className="main">
+                                <Link to="/" className="boardLink has-text-white">Go back to scoreboard</Link>
+
                                 <div className="container">
                                     <br /><br />
                                     <div className="boardWrapper">
@@ -155,8 +157,6 @@ export class Board extends React.Component {
                                             })}
                                         </ul>
                                     </div>
-
-
                                 </div>
                             </div>
                         </div>
