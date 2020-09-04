@@ -1,15 +1,17 @@
 .boardWrapper {
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .board {
-    width: 250px;
-}
-
-.boardRow {
+    width: 70vw;
     display: flex;
-    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
 }
 
 .boardHeading {
@@ -19,9 +21,6 @@
     list-style-type: none;
 }
 
-.boardHistory {
-    margin-left: 18px;
-}
 
 .boardHistoryList {
     padding: 0;
@@ -41,5 +40,6 @@
 .boardLink::before {
     content: '🛬';
     font-size: 1rem;
+    color: white;
     text-decoration: none;
 }

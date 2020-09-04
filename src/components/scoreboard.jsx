@@ -17,15 +17,15 @@ export class Scoreboard extends React.Component {
 
     render() {
         return (
-            <div className="d">
+            <div>
                 <section className="hero is-black is-fullheight">
                     <div className="hero-head">
                         <header className="navbar">
                             <div className="container">
                                 <div className="navbar-brand">
-                                    <a className="navbar-item">
+                                    <Link className="navbar-item" to="/">
                                         <h1 className="title is-4">Ting-Tang-Tong</h1>
-                                    </a>
+                                    </Link>
                                     <span className="navbar-burger burger" data-target="navbarMenuHeroC">
                                         <span></span>
                                         <span></span>
@@ -35,7 +35,7 @@ export class Scoreboard extends React.Component {
                                 <div id="navbarMenuHeroC" className="navbar-menu">
                                     <div className="navbar-end">
                                         <span className="navbar-item">
-                                            <a className="button is-dark is-inverted">
+                                            <a href="https://github.com/roeintheglasses/ting-tang-tong" className="button is-dark is-inverted">
                                                 <span className="icon">
                                                     <i className="fab fa-github"></i>
                                                 </span>
