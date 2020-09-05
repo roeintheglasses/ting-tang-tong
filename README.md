@@ -1,4 +1,4 @@
-# ting-tang-tong
+# Ting-Tang-Tong 🎮
 ### Cause tik-tac-toe sounds too basic.
 
 
